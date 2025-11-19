@@ -31,7 +31,7 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           # Rely strictly on the Secret Token
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WITTY_MEADOW_00A766C00 }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_TOKEN }}
           action: "upload"
           app_location: "/"
           api_location: ""
@@ -48,5 +48,5 @@ jobs:
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WITTY_MEADOW_00A766C00 }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_TOKEN }}
           action: "close"
