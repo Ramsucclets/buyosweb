@@ -1,5 +1,5 @@
 <template>
-  <section id="intro" class="position-relative mt-4">
+  <section id="intro" class="position-relative">
     <div class="container-lg">
       <swiper
         :modules="modules"
