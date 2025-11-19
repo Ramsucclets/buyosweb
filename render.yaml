@@ -1,0 +1,30 @@
+services:
+  # Backend API Service
+  - type: web
+    name: buyosweb-api
+    runtime: node
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      # Add your other environment variables in Render dashboard
+
+  # Frontend Static Site
+  - type: web
+    name: buyosweb-frontend
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://buyosweb-api.onrender.com
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
