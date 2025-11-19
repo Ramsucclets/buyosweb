@@ -4,8 +4,10 @@
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
           <div class="position-relative">
-            <img src="/images/card-image2.jpg" alt="Our History" class="img-fluid rounded-4 shadow-lg position-relative z-2" />
-            <div class="position-absolute top-0 end-0 w-100 h-100 bg-primary opacity-10 rounded-4" style="transform: translate(15px, -15px); z-index: 1;"></div>
+            <div class="position-absolute top-0 end-0 w-100 h-100 bg-primary opacity-10 rounded-4" style="transform: translate(25px, -25px); z-index: 0;"></div>
+            <div class="jarallax rounded-4 shadow-lg position-relative z-1" data-jarallax style="height: 600px;">
+              <img src="/images/card-image2.jpg" alt="Our History" class="jarallax-img" style="object-fit: cover;" />
+            </div>
           </div>
         </div>
         <div class="col-lg-6 order-lg-1">
@@ -51,11 +53,22 @@
   </section>
 </template>
 
+<script setup>
+import { onMounted } from 'vue';
+import { jarallax } from 'jarallax';
+import 'jarallax/dist/jarallax.css';
+
+onMounted(() => {
+  jarallax(document.querySelectorAll('.jarallax'), {
+    speed: 0.5,
+  });
+});
+</script>
+
 <style scoped>
 .letter-spacing-2 {
   letter-spacing: 2px;
 }
 
-/* Bootstrap Icons fallback if not loaded globally */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 </style>

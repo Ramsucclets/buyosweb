@@ -12,7 +12,7 @@
         <div class="col-lg-6">
           <div class="about-content ps-lg-5">
             <h6 class="text-primary text-uppercase fw-bold mb-2 letter-spacing-2">Statement from our CEO</h6>
-            <h2 class="display-5 fw-bold mb-4">A Vision for the Future of Fashion</h2>
+            <h2 class="display-5 fw-bold mb-4">A solution to a universal problem</h2>
             <figure class="mb-4">
               <blockquote class="blockquote">
                 <p class="lead text-muted">
@@ -20,58 +20,16 @@
                 </p>
               </blockquote>
               <figcaption class="blockquote-footer mt-2">
-                Sarah Jenkins <cite title="Source Title">CEO & Founder</cite>
+                Rio Ferdinand <cite title="Source Title">CEO & Founder</cite>
               </figcaption>
             </figure>
             <p class="mb-4 text-secondary">
-              Our journey has been one of relentless innovation. From our humble beginnings to becoming a trusted name in footwear, every step has been guided by our core values. We are committed to sustainable practices and creating products that stand the test of time.
+              Our journey began with a shared frustration. Our team faced a universal struggle: workspaces that were simply too cramped with items and files to allow for clarity. We didn't just want to tidy up; we wanted a solution. We utilize pattern-centered design to transform chaos into order, creating environments where you can achieve your goals efficiently.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Team Commentary Section -->
-      <div class="row mb-5">
-        <div class="col-12 text-center mb-5">
-          <h2 class="display-5 fw-bold">What is BuYoS?</h2>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 border-0 shadow-sm hover-lift p-4 text-center">
-            <div class="card-body">
-              <div class="mb-3 text-primary">
-                <i class="bi bi-quote fs-1"></i>
-              </div>
-              <p class="card-text text-muted fst-italic">"Working here means being part of a family that pushes boundaries every single day. The creative freedom is unmatched."</p>
-              <h6 class="fw-bold mt-3 mb-0">Michael Chen</h6>
-              <small class="text-secondary">Head of Design</small>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 border-0 shadow-sm hover-lift p-4 text-center">
-            <div class="card-body">
-              <div class="mb-3 text-primary">
-                <i class="bi bi-quote fs-1"></i>
-              </div>
-              <p class="card-text text-muted fst-italic">"We don't just make shoes; we craft experiences. Seeing our customers happy is the ultimate reward for our hard work."</p>
-              <h6 class="fw-bold mt-3 mb-0">Elena Rodriguez</h6>
-              <small class="text-secondary">Lead Artisan</small>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 border-0 shadow-sm hover-lift p-4 text-center">
-            <div class="card-body">
-              <div class="mb-3 text-primary">
-                <i class="bi bi-quote fs-1"></i>
-              </div>
-              <p class="card-text text-muted fst-italic">"Sustainability isn't a buzzword for us; it's the foundation of everything we do. I'm proud to lead our green initiatives."</p>
-              <h6 class="fw-bold mt-3 mb-0">David Okonjo</h6>
-              <small class="text-secondary">Sustainability Director</small>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <!-- Testimonials Section -->
       <div class="row bg-light rounded-4 p-5">
@@ -85,9 +43,8 @@
             <div class="mb-3 text-warning">
               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
             </div>
-            <p class="text-muted mb-3">"Absolutely in love with my new boots! The quality is incredible and they are so comfortable right out of the box."</p>
-            <h6 class="fw-bold mb-0">Emily Watson</h6>
-            <small class="text-secondary">Verified Buyer</small>
+            <p class="text-muted mb-3">"Desainnya unik banget dan keliatan premium. Holdernya kokoh, pas dipake buat nonton video lama nggak goyang. klo aku paling suka bagian lengkungannya, keliatan niat dan rapi. Worth it sih"</p>
+            <h6 class="fw-bold mb-0">Patrick Jehezkiel</h6>
           </div>
         </div>
         <div class="col-lg-4 mb-4 mb-lg-0">
@@ -96,9 +53,8 @@
             <div class="mb-3 text-warning">
               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
             </div>
-            <p class="text-muted mb-3">"Great service and fast shipping. The team was very helpful when I had questions about sizing. Highly recommend!"</p>
-            <h6 class="fw-bold mb-0">James Carter</h6>
-            <small class="text-secondary">Verified Buyer</small>
+            <p class="text-muted mb-3">"Bentuknya estetik banget. Waktu nyoba buat naruh HP, stand-nya stabil dan nggak licin. ukurannya kecil tapi kuat, pas banget buat dibawa ke mana-mana. Produk lokal kualitas gacor"</p>
+            <h6 class="fw-bold mb-0">Joshua Sammy</h6>
           </div>
         </div>
         <div class="col-lg-4">
@@ -107,9 +63,8 @@
             <div class="mb-3 text-warning">
               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
             </div>
-            <p class="text-muted mb-3">"The attention to detail is amazing. You can really tell that these products are made with care. Will definitely buy again."</p>
-            <h6 class="fw-bold mb-0">Sophia Liu</h6>
-            <small class="text-secondary">Verified Buyer</small>
+            <p class="text-muted mb-3">"Awalnya cuma penasaran, tapi pas dicoba ternyata kualitasnya di atas ekspektasi. Bahannya tebal dan solid. Desainnya juga unik. Cocok sih buat yang suka estetik tapi fungsional"</p>
+            <h6 class="fw-bold mb-0">Christian Kaliman</h6>
           </div>
         </div>
       </div>

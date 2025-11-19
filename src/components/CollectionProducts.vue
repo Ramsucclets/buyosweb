@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-6 col-md-6 mb-4">
           <div
-            class="collection-card card border-0 d-flex flex-row align-items-end jarallax-keep-img"
+            class="collection-card card border-0 d-flex flex-row align-items-end jarallax-keep-img jarallax"
           >
             <img
               src="/images/collection-item1.jpg"
@@ -25,7 +25,7 @@
         </div>
         <div class="col-lg-6 col-md-6">
           <div
-            class="collection-card card border-0 d-flex flex-row jarallax-keep-img"
+            class="collection-card card border-0 d-flex flex-row jarallax-keep-img jarallax"
           >
             <img
               src="/images/collection-item2.jpg"
@@ -50,5 +50,13 @@
 </template>
 
 <script setup>
-// Logic if needed
+import { onMounted } from 'vue';
+import { jarallax } from 'jarallax';
+import 'jarallax/dist/jarallax.css';
+
+onMounted(() => {
+  jarallax(document.querySelectorAll('.jarallax'), {
+    speed: 0.5,
+  });
+});
 </script>
