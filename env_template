@@ -1,0 +1,4 @@
+# This file contains environment variables for production.
+# Rename this file to .env.production
+# After deploying your backend, replace the URL below with your actual Azure App Service URL.
+VITE_API_URL=https://YOUR-BACKEND-APP-NAME.azurewebsites.net
