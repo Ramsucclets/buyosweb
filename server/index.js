@@ -1,9 +1,13 @@
 import express from 'express';
 import cors from 'cors';
-import pg from 'pg';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 
 dotenv.config();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -12,29 +16,17 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-// Database connection
-const { Pool } = pg;
-const pool = new Pool({
-  user: process.env.DB_USER,
-  host: process.env.DB_HOST,
-  database: process.env.DB_NAME,
-  password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT,
-});
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'Server is running' });
 });
 
-app.get('/api/test-db', async (req, res) => {
-  try {
-    const result = await pool.query('SELECT NOW()');
-    res.json({ status: 'ok', time: result.rows[0].now });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ status: 'error', message: 'Database connection failed', error: err.message });
-  }
+// Catch-all route to serve Vue.js app for client-side routing
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(port, () => {
