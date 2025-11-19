@@ -5,8 +5,8 @@
       <div class="row align-items-center mb-5">
         <div class="col-lg-6 mb-4 mb-lg-0">
           <div class="image-holder position-relative">
-            <img src="/images/single-image.jpg" alt="CEO" class="img-fluid rounded-4 shadow-lg position-relative z-2" />
-            <div class="pattern-overlay position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-10 rounded-4" style="transform: translate(-15px, 15px); z-index: 1;"></div>
+            <img src="/images/ceo-image.png" alt="CEO" class="img-fluid rounded-4 shadow-lg position-relative z-2" />
+            <div class="pattern-overlay position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-1 rounded-4" style="transform: translate(-15px, 15px); z-index: 1;"></div>
           </div>
         </div>
         <div class="col-lg-6">
@@ -16,7 +16,7 @@
             <figure class="mb-4">
               <blockquote class="blockquote">
                 <p class="lead text-muted">
-                  "BuYoS was born from a simple idea: that style shouldn't come at the cost of comfort or conscience. We are building more than just a brand; we are cultivating a community that values authenticity and quality above all else."
+                  "BuYoS was conceived from an intriguing idea: To create spaces where there is no space. Our team used to face the worldwide problem where our workspace is simply too cramped of items and files. We came up with the solution. We are more than just selling organizers, we embrace and utilize the very core of Pattern-centered habit of us humans, to create a more productive and sustainable workspace and together achieve our goals."
                 </p>
               </blockquote>
               <figcaption class="blockquote-footer mt-2">
@@ -96,9 +96,8 @@
 }
 
 .image-holder:hover img {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
-/* Bootstrap Icons fallback if not loaded globally */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 </style>

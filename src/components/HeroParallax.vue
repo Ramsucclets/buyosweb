@@ -1,34 +1,39 @@
 <template>
   <section class="hero-parallax position-relative overflow-hidden">
-    <div class="jarallax h-100 w-100 position-absolute top-0 start-0" data-jarallax>
+    <div ref="parallaxContainer" class="jarallax position-absolute top-0 start-0 w-100 h-100">
       <img class="jarallax-img" src="/images/card-image1.jpg" alt="Hero Image" />
-      <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
+      <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark transition-opacity" :class="isHovered ? 'opacity-0' : 'opacity-25'"></div>
     </div>
     
     <div class="container h-100 d-flex align-items-center justify-content-center position-relative z-2" style="min-height: 100vh;">
-      <div class="text-center text-white">
+      <div class="text-center text-white transition-opacity" 
+           @mouseenter="isHovered = true" 
+           @mouseleave="isHovered = false"
+           :class="{ 'opacity-0': isHovered }">
         <h1 class="hero-title display-1 fw-bold text-uppercase mb-4">
-          <span class="expanding-text">Elevate Your Style</span>
+          <span class="expanding-text">Bu You Space</span>
         </h1>
-        <p class="lead mb-5 fs-3 fw-light">Discover the latest trends in fashion</p>
-        <a href="#shop" class="btn btn-light btn-lg rounded-pill px-5 py-3 fw-bold text-uppercase tracking-wider hover-scale">
-          Shop Collection
-        </a>
+        <p class="lead mb-5 fs-3 fw-bold hero-subtitle">Optimizing Your DeskSpace</p>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 import { jarallax } from 'jarallax';
 import 'jarallax/dist/jarallax.css';
 
+const parallaxContainer = ref(null);
+const isHovered = ref(false);
+
 onMounted(() => {
-  jarallax(document.querySelectorAll('.jarallax'), {
-    speed: 0.5,
-    imgPosition: '50% 50%',
-  });
+  if (parallaxContainer.value) {
+    jarallax(parallaxContainer.value, {
+      speed: 0.5,
+      imgPosition: '50% 50%',
+    });
+  }
 });
 </script>
 
@@ -63,6 +68,10 @@ onMounted(() => {
   }
 }
 
+.hero-subtitle {
+  color: #e63946;
+}
+
 .tracking-wider {
   letter-spacing: 2px;
 }
@@ -73,5 +82,9 @@ onMounted(() => {
 
 .hover-scale:hover {
   transform: scale(1.05);
+}
+
+.transition-opacity {
+  transition: opacity 0.6s ease;
 }
 </style>

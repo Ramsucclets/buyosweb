@@ -49,7 +49,7 @@
             <h5 class="widget-title pb-2">Popular</h5>
             <ul class="menu-list list-unstyled">
               <li class="pb-2">
-                <a href="#">produ</a>
+                <a href="#">Products</a>
               </li>
               <li class="pb-2">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#modallogin"

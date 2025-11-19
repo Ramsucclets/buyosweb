@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="product-content padding-small">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
           <div
             class="col mb-4"
             v-for="(product, index) in products"
@@ -36,27 +36,17 @@ import ProductCard from "./ProductCard.vue";
 const products = [
   {
     image: "/images/card-item1.jpg",
-    title: "Running shoes for men",
+    title: "Phone Holder",
     price: "$99",
   },
   {
     image: "/images/card-item2.jpg",
-    title: "Running shoes for men",
+    title: "Mini-Desk Drawer",
     price: "$99",
   },
   {
     image: "/images/card-item3.jpg",
-    title: "Running shoes for men",
-    price: "$99",
-  },
-  {
-    image: "/images/card-item4.jpg",
-    title: "Running shoes for men",
-    price: "$99",
-  },
-  {
-    image: "/images/card-item5.jpg",
-    title: "Running shoes for men",
+    title: "Stationary Holder",
     price: "$99",
   },
 ];

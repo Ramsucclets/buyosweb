@@ -31,23 +31,23 @@
 <script setup>
 const teamMembers = [
   {
-    name: "Sarah Johnson",
-    role: "Creative Director",
-    image: "/images/card-image3.jpg" // Using existing images as placeholders
+    name: "Dhama Nanda",
+    role: "Technical Director",
+    image: "/images/card-image3.jpg" 
   },
   {
-    name: "Michael Chen",
-    role: "Lead Designer",
+    name: "Ronald Ceng",
+    role: "Head of Growth",
     image: "/images/card-large-item4.jpg"
   },
   {
-    name: "Emma Wilson",
-    role: "Marketing Head",
+    name: "Ryan Reagen Dharmajaya",
+    role: "Business Lead",
     image: "/images/card-image5.jpg"
   },
   {
-    name: "David Miller",
-    role: "Product Manager",
+    name: "Jericho Juan",
+    role: "Operations Manager",
     image: "/images/card-image6.jpg"
   }
 ];

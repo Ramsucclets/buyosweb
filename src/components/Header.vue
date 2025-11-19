@@ -45,7 +45,7 @@
                 <a class="nav-link me-4" href="#about-us">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-4" href="#">Services</a>
+                <a class="nav-link me-4" href="#">Product</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -57,12 +57,12 @@
                 >
                 <ul class="dropdown-menu fw-bold">
                   <li><a href="#about-us" class="dropdown-item">About Us</a></li>
-                  <li><a class="dropdown-item" href="index.html">Shop</a></li>
+                  <li><a class="dropdown-item" href="#">Product</a></li>
                   <li><a class="dropdown-item" href="index.html">Blog</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#footer">Contact</a>
               </li>
             </ul>
           </div>
