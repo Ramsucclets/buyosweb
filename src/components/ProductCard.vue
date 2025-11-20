@@ -9,18 +9,7 @@
           <button
             type="button"
             class="btn btn-light"
-            data-bs-toggle="modal"
-            data-bs-target="#modallong"
-          >
-            <svg class="shopping-carriage">
-              <use xlink:href="#shopping-carriage"></use>
-            </svg>
-          </button>
-          <button
-            type="button"
-            class="btn btn-light"
-            data-bs-target="#modaltoggle"
-            data-bs-toggle="modal"
+            @click="$emit('view-product')"
           >
             <svg class="quick-view">
               <use xlink:href="#quick-view"></use>

@@ -19,35 +19,58 @@
             :key="index"
           >
             <ProductCard
-              :image="product.image"
+              :image="product.images[0]"
               :title="product.title"
               :price="product.price"
+              @view-product="openModal(product)"
             />
           </div>
         </div>
       </div>
     </div>
+
+    <ProductModal 
+      :isOpen="isModalOpen" 
+      :product="selectedProduct" 
+      @close="isModalOpen = false" 
+    />
   </section>
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import ProductCard from "./ProductCard.vue";
+import ProductModal from "./ProductModal.vue";
+
+const isModalOpen = ref(false);
+const selectedProduct = ref({ images: [], title: '', price: '' });
+
+const openModal = (product) => {
+  selectedProduct.value = product;
+  isModalOpen.value = true;
+};
 
 const products = [
   {
-    image: "/images/card-item1.jpg",
+    images: ["/images/card-item1.jpg", "/images/card-large-item1.jpg"],
     title: "Phone Holder",
-    price: "$99",
+    price: "Rp 60.000",
   },
   {
-    image: "/images/card-item2.jpg",
+    images: ["/images/card-item2.jpg", "/images/card-large-item2.jpg"],
     title: "Mini-Desk Drawer",
-    price: "$99",
+    price: "Rp 60.000",
   },
   {
-    image: "/images/card-item3.jpg",
+    images: ["/images/card-item3.jpg", "/images/card-large-item3.jpg"],
     title: "Stationary Holder",
-    price: "$99",
+    price: "Rp 60.000",
   },
 ];
 </script>
+
+<style scoped>
+.product-content {
+  padding-bottom: 2rem;
+}
+</style>
