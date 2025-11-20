@@ -7,12 +7,6 @@
             <h5 class="widget-title pb-2">Info</h5>
             <ul class="menu-list list-unstyled">
               <li class="pb-2">
-                <a href="#">Track Your Order</a>
-              </li>
-              <li class="pb-2">
-                <a href="index.html">Our Blog</a>
-              </li>
-              <li class="pb-2">
                 <a href="#">Privacy policy</a>
               </li>
               <li class="pb-2">
@@ -71,7 +65,7 @@
               <span
                 >Jl. Raya Kb. Jeruk No.27, RT.1/RW.9, Kemanggisan, Kec. Palmerah, Kota Jakarta Barat 11530
               </span>
-              <span> Call us: (+62) 81 </span>
+              <span> Call us: (+62) 896-8426-4364 </span>
               <span class="text-hover fw-bold light-border"
                 ><a href="mailto:contact@buyos.store"
                   >contact@buyos.store</a

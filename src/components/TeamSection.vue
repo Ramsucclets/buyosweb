@@ -10,7 +10,7 @@
         <div class="col-md-6 col-lg-3" v-for="(member, index) in teamMembers" :key="index">
           <div class="team-card text-center group">
             <div class="image-wrapper mb-4 position-relative overflow-hidden rounded-4">
-              <img :src="member.image" :alt="member.name" class="img-fluid w-100 transition-transform duration-500" />
+              <img :src="member.image" :alt="member.name" class="img-fluid w-100 transition-transform duration-500 team-member-img" />
               <div class="social-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center bg-dark bg-opacity-50 opacity-0 transition-opacity duration-300">
                 <div class="d-flex gap-3">
                   <a href="#" class="text-white hover-primary"><i class="bi bi-facebook"></i></a>
@@ -75,5 +75,10 @@ const teamMembers = [
 
 .transition-opacity {
   transition: opacity 0.3s ease;
+}
+
+.team-member-img {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
 }
 </style>

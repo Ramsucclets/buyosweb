@@ -13,13 +13,8 @@
             />
             <div class="card-detail p-3 m-3 p-lg-5 m-lg-5">
               <h3 class="card-title display-3">
-                <a href="#">Minimal Collection</a>
+                <a href="#">Phone Holder</a>
               </h3>
-              <a
-                href="#"
-                class="text-uppercase mt-3 d-inline-block text-hover fw-bold"
-                >Shop Now</a
-              >
             </div>
           </div>
         </div>
@@ -34,13 +29,8 @@
             />
             <div class="card-detail p-3 m-3 p-lg-5 m-lg-5">
               <h3 class="card-title display-3">
-                <a href="#">Sneakers Collection</a>
+                <a href="#">Mini-Desk Drawer</a>
               </h3>
-              <a
-                href="#"
-                class="text-uppercase mt-3 d-inline-block text-hover fw-bold"
-                >Shop Now</a
-              >
             </div>
           </div>
         </div>
