@@ -85,12 +85,12 @@
               </a>
             </li>
             <li>
-              <a href="#" data-bs-toggle="modal" data-bs-target="#modallong" class="border-0 position-relative">
+              <a href="#" @click.prevent="cart.openCart()" class="border-0 position-relative">
                 <svg class="shopping-cart" width="24" height="24">
                   <use xlink:href="#shopping-cart"></use>
                 </svg>
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary" style="font-size: 0.6rem;">
-                  0
+                  {{ cart.totalItems }}
                 </span>
               </a>
             </li>
@@ -103,6 +103,7 @@
 
 <script setup>
 import { onMounted, onUnmounted, ref } from 'vue';
+import { cart } from '../store/cart';
 
 const isScrolled = ref(false);
 

@@ -15,6 +15,15 @@
               <use xlink:href="#quick-view"></use>
             </svg>
           </button>
+          <button
+            type="button"
+            class="btn btn-light"
+            @click="addToCart"
+          >
+            <svg class="shopping-carriage" width="24" height="24">
+              <use xlink:href="#shopping-carriage"></use>
+            </svg>
+          </button>
         </div>
       </div>
       <!-- cart-concern -->
@@ -31,11 +40,22 @@
 </template>
 
 <script setup>
-defineProps({
+import { cart } from '../store/cart';
+
+const props = defineProps({
   image: String,
   title: String,
   price: String,
 });
+
+const addToCart = () => {
+  cart.addToCart({
+    title: props.title,
+    price: props.price,
+    image: props.image
+  });
+  cart.openCart();
+};
 </script>
 
 <style scoped>

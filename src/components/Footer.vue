@@ -51,7 +51,7 @@
                 >
               </li>
               <li class="pb-2">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modallong"
+                <a href="#" @click.prevent="cart.openCart()"
                   >Cart</a
                 >
               </li>
@@ -80,7 +80,7 @@
 </template>
 
 <script setup>
-// Footer logic if needed
+import { cart } from '../store/cart';
 </script>
 
 <style scoped>

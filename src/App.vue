@@ -151,6 +151,8 @@
 
   <Home />
 
+  <CartModal />
+
   <Footer />
 </template>
 
@@ -158,6 +160,7 @@
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import Home from "./views/Home.vue";
+import CartModal from "./components/CartModal.vue";
 </script>
 
 <style>

@@ -32,6 +32,10 @@
             Experience the quality and design of our {{ product.title }}. 
             Perfect for your workspace setup.
           </p>
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-dark add-to-cart-btn text-uppercase" @click="addToCart">Add to Cart</button>
+            <button class="btn btn-dark add-to-cart-btn text-uppercase" @click="orderViaWhatsApp">Order via WhatsApp</button>
+          </div>
         </div>
       </div>
     </div>
@@ -40,6 +44,7 @@
 
 <script setup>
 import { ref, watch } from 'vue';
+import { cart } from '../store/cart';
 
 const props = defineProps({
   isOpen: Boolean,
@@ -63,6 +68,18 @@ const nextImage = () => {
 
 const prevImage = () => {
   currentImageIndex.value = (currentImageIndex.value - 1 + props.product.images.length) % props.product.images.length;
+};
+
+const orderViaWhatsApp = () => {
+  const message = `I am interested in purchasing the ${props.product.title} priced at ${props.product.price}.\n\nPlease provide me with more information on how to proceed with the payment and delivery.`;
+  const encodedMessage = encodeURIComponent(message);
+  window.open(`https://wa.me/6289684264364?text=${encodedMessage}`, '_blank');
+};
+
+const addToCart = () => {
+  cart.addToCart(props.product);
+  cart.openCart(); // Open cart to show item was added
+  close(); // Close product modal
 };
 
 // Reset slider when modal opens
