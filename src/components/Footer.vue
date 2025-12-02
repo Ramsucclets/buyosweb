@@ -67,8 +67,8 @@
               </span>
               <span> Call us: (+62) 896-8426-4364 </span>
               <span class="text-hover fw-bold light-border"
-                ><a href="mailto:contact@buyos.store"
-                  >contact@buyos.store</a
+                ><a href="mailto:contact@buyos.space"
+                  >contact@buyos.space</a
                 ></span
               >
             </div>

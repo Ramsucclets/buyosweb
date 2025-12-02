@@ -4,7 +4,7 @@
       <div
         class="display-header d-flex align-items-center justify-content-between"
       >
-        <h2 class="section-title text-uppercase">Featured Products</h2>
+        <h2 class="section-title text-uppercase">Our Products</h2>
         <div class="btn-right">
           <a href="#" class="d-inline-block text-uppercase text-hover fw-bold"
             >View all</a

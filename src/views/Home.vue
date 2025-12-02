@@ -2,9 +2,9 @@
   <div class="home-page">
     <HeroParallax />
     <HistorySection />
+    <FeaturedProducts />
     <AboutSection />
     <TeamSection />
-    <FeaturedProducts />
     <CollectionProducts />
   </div>
 </template>
